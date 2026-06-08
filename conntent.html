@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    }
+    body {
+        background: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+    }
+    header{
+        background:gold;
+        color:aqua;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+nav{
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: #ff6b6b;
+}
+
+.btn{
+    display: flex;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff45ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: o.3s;
+}
+.btn:hover {
+    background: #ff45ff;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 25rem;
+
+    margin: 50px auto;
+    background: #99c94d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0.0.0.0.1);
+    border: #801f1f solid 9px;
+}
+    .container img{width: 100%;
+    border-radius: 8px;
+margin: 20px 0 ;
+flex-direction: column;}
+#in{ display: flex;
+align-items: center;
+justify-content: center;
+border: 2px solid rebeccapurple;
+padding: 10px;
+margin: 10px;
+transition: 1s;
+transform: translateY(-8px);}
+
+.form input,form textarea{width: 250px;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #ff45ff;
+border-radius: 5px;
+flex-direction: column-reverse;
+flex-wrap: wrap;}
+/* .from button{flex-direction: column;
+    padding: 12px 25px;
+    background: #667e66;
+    color: #7da0aa;
+    border: 5px;
+
+    border-radius: 5px ;
+    cursor: pointer;
+} */
+/* .from button:hover{
+    background: #556855;
+} */
+.footer{
+    text-align: center;
+    padding: 20px;
+    background:firebrick;
+    color: #fff;
+    margin-top: 50px;
+}
+@media(max-width768px) {
+    nav {
+        gap: 10px;
+        font-size: 14px;
+    }
+    .hero h1 {font-size: 28px;}
+}
+
+</style>
+</head>
+<body style="background-color: #ff45ff;">
+    <header>
+        <nav>
+        <h2 class="logo">SALT N PEPPAR</h2>
+        <a href="index.html" id="on">HOME</a>
+        <a href="about.html"id="on">ABOUT</a>
+        <a href="conntent.html"id="on">CONNTENT</a>
+         </nav>
+    </header>
+<div class="container">
+
+<h1>contact us</h1>
+<pre>
+
+</pre>
+<form >
+    <input type="text" placeholder="your name" id="in">
+    <input type="tel" placeholder="your content no" id="in">
+    <input type="@mail" placeholder="your email" id="in">
+     <input type="text" placeholder="your addres" id="in">
+    <textarea placeholder="Your message" rows="4" id="in"></textarea>
+    <button type="submit" id="in">Send message</button>
+</form>
+</div>
+
+<div class="footer">
+    <h1>welcome to salt n peppar</h1>
+    <p>@ 2026</p>
+</div>
+
+</body>
+</html> 
