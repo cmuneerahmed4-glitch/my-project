@@ -16,24 +16,29 @@
         line-height: 1.6;
     }
     header{
-        background:gold;
+        background:red;
         color:aqua;
         padding: 15px 0;
         display: flex;
-        justify-content: space-between;
+        
     }
-nav{
+ nav{
     width: 100%;
     margin: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-}
-.logo{
-    color: #ff6b6b;
-}
+    gap: 20px;
+} 
+.logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 80% ;
 
-.btn{
+
+}
+/* 
+.{
     display: flex;
     margin-top: 20px;
     padding: 12px 25px;
@@ -42,26 +47,56 @@ nav{
     text-decoration: none;
     border-radius: 5px;
     transition: o.3s;
+    
 }
 .btn:hover {
-    background: #ff45ff;
-}
+    background: hotpink;
+} */
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
-    width: 25rem;
+    width: 350px;
 
     margin: 50px auto;
-    background: #99c94d;
+    background: goldenrod;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0.0.0.0.1);
     border: #801f1f solid 9px;
+     /* transition: 400px; */
+     
+    
+     /* border-radius: 20px;
+    animation-name:muneer;
+    animation-duration: 5s;
+    animation-delay: 7s;
+    animation-iteration-count:infinite ;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;} */
+
+
+/* @keyframes muneer{
+
+    0%{
+        transform:translateX(0)rotate(0) ;
+    }
+    25%{transform:translateX(100px)rotate(90deg)
+    
+   }
+   50%{
+    transform: translateY(100px) rotate(180deg);
+   }
+75%{
+    transform: translateX(-100px) rotate(270deg);
+
+}100%{
+    transform: translate(100px) rotate(350deg); */
 }
-    .container img{width: 100%;
+
+    .container img {width: 100%;
     border-radius: 8px;
 margin: 20px 0 ;
 flex-direction: column;}
@@ -71,8 +106,27 @@ justify-content: center;
 border: 2px solid rebeccapurple;
 padding: 10px;
 margin: 10px;
-transition: 1s;
-transform: translateY(-8px);}
+/* transition: 1s;
+transform: translateY(-8px); */ 
+}
+    
+/* 
+.container:hover{
+    background: rgb(44, 16, 82);
+    color:red;
+    width:250px;
+    height:250px;
+} */
+ #on{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue; 
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+ }
 
 .form input,form textarea{width: 250px;
 padding: 10px;
@@ -96,7 +150,7 @@ flex-wrap: wrap;}
 .footer{
     text-align: center;
     padding: 20px;
-    background:firebrick;
+    background:blue;
     color: #fff;
     margin-top: 50px;
 }
@@ -110,28 +164,69 @@ flex-wrap: wrap;}
 
 </style>
 </head>
-<body style="background-color: #ff45ff;">
+<body style="background-color: black;">
     <header>
+        <div class="logo"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbavAimWlM-8KzXrTQPbZnBW-my9JhlVGurQ&s" alt=""></div>
         <nav>
-        <h2 class="logo">SALT N PEPPAR</h2>
+       
         <a href="index.html" id="on">HOME</a>
         <a href="about.html"id="on">ABOUT</a>
         <a href="conntent.html"id="on">CONNTENT</a>
          </nav>
-    </header>
+         
+    </header> <h1 .id="on">order from and content</h1>
+   
 <div class="container">
 
-<h1>contact us</h1>
-<pre>
+<h1>LOGO</h1>
 
-</pre>
 <form >
     <input type="text" placeholder="your name" id="in">
     <input type="tel" placeholder="your content no" id="in">
     <input type="@mail" placeholder="your email" id="in">
      <input type="text" placeholder="your addres" id="in">
+      <input type="text" placeholder="choice file" >
+    <label for="">no file</label>
+   
+    <input color="blue" type="button"value="button" id="in" >
+    
+    <input type="checkbox" id="in">
+    <label for="">car</label>
+    <input type="checkbox"  id="in">
+    <label for="">bus</label>
+    <input type="checkbox"  id="in">
+    <label for="">bike</label>
+   
+    <label for="text">Color piker:</label>
+    <input type="color" id="in">
+   
+    <input type="date" " id="in">
+    
+    <label for="text">Your mark</label>
+    <input type="number "" id="in">
+   
+    <label for="text">Your bowser link</label>
+    <input type="url" id="in">
+   
+    <label for="">male</label>
+    <input type="radio"  id="in">
+     <label for="">female</label>
+    <input type="radio" id="in">
+    
+    <input type="range" id="in">
+
+<input  type="reset" id="in">
+
+<input type="search"placeholder="search" id="in">
+
+    <label for="number">phone No :</label>
+    <input type="number"  id="in">
+   
+    <input type="time" id="in">
+   <input type="week">
     <textarea placeholder="Your message" rows="4" id="in"></textarea>
     <button type="submit" id="in">Send message</button>
+      <input type="submit" id="in">
 </form>
 </div>
 
